@@ -9,8 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "formik": "^2.4.9",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.16.2",
     "next": "16.1.1",
+    "next-auth": "^4.24.13",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "yup": "^1.7.1"
