@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import HeaderConditional from "./components/HeaderConditional";
+import FooterConditional from "./components/FooterConditional";
 import Providers from "./components/Providers";
 
 const geistSans = Geist({
@@ -27,15 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-[#fdfcf9] bg-gradient-to-br from-[#fffaf3] to-[#f2e8d8] text-[#2b2b2b]">
+      <body className="min-h-screen flex flex-col bg-white">
         <Providers>
-          <Header />
+          <HeaderConditional />
 
           <main className="flex-1">
             {children}
           </main>
 
-          <Footer />
+          <FooterConditional />
         </Providers>
       </body>
     </html>
